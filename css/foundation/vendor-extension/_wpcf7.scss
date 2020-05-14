@@ -1,0 +1,44 @@
+// main: ../../default.scss
+/* iphone submit css reset */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 10px;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+.screen-reader-response {
+  display: none;
+}
+.wpcf7-validation-errors {
+  text-align: center;
+  color: #f00;
+  font-size: 1.4rem;
+  margin-top: 16px;
+}
+.wpcf7-mail-sent-ok {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 16px;
+  color: #fff;
+}
+.wpcf7-list-item-label {
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+input[type="checkbox"] {
+  margin-right: 8px;
+}

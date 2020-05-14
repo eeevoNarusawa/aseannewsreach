@@ -1,0 +1,119 @@
+// main: ../../default.scss
+@media screen and (max-width: $media-M) {
+  .p-contact {
+    &--wrap {
+      padding: 40px 0;
+      background: #002c00;
+      &-ttl {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #f8bc00;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+    }
+    &--form {
+      width: 92%;
+      max-width: 520px;
+      margin: 0 auto;
+      &-cont {
+        margin-bottom: 20px;
+      }
+      &-ttl {
+        color: #fff;
+        margin-bottom: 4px;
+        span {
+          color: #f00;
+        }
+      }
+      &-input {
+        width: 96%;
+        max-width: 520px;
+        input,
+        textarea {
+          width: 100%;
+          max-width: 512px;
+          padding: 4px;
+          font-size: 1.8rem;
+        }
+      }
+      input[type="submit"] {
+        background: #f8bc00;
+        color: #fff;
+        border-radius: 0;
+        border: none;
+        width: 99%;
+        max-width: 510px;
+        margin: 0 auto;
+        padding: 8px 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media screen and (min-width: $mediaL-) {
+  .p-contact {
+    display: table;
+    &--wrap {
+      width: 520px;
+      padding: 40px 90px;
+      background: #002c00;
+      &-ttl {
+        width: 520px;
+        font-size: 5rem;
+        font-weight: bold;
+        color: #f8bc00;
+        margin-bottom: 24px;
+      }
+    }
+    &--form {
+      &-cont {
+        margin-bottom: 24px;
+      }
+      &-ttl {
+        color: #fff;
+        margin-bottom: 4px;
+        span {
+          color: #f00;
+        }
+      }
+      &-input {
+        width: 520px;
+        input,
+        textarea {
+          width: 512px;
+          font-size: 1.6rem;
+        }
+        input {
+          padding: 4px;
+        }
+      }
+      input[type="submit"] {
+        background: #f8bc00;
+        color: #fff;
+        border-radius: 0;
+        border: none;
+        width: 520px;
+        padding: 12px 0;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: .2s;
+        &:hover {
+          background: #fff;
+          color: #f8bc00;
+          outline: 4px solid #f8bc00;
+          outline-offset: -4px;        }
+      }
+    }
+    &--visual {
+      width: 100%;
+      height: 736px;
+      background-image: url('../images/contact.jpg');
+      background-size: cover;
+      background-position: 30% 100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

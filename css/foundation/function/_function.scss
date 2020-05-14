@@ -1,0 +1,49 @@
+// main: ../../default.scss
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+  font-size: 62.5%;
+}
+body{
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+}
+.clearfix {
+  min-height: 1px;
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+* html .clearfix {
+  height: 1px;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.center {
+  text-align: center;
+}
+@media screen and (max-width: $media-M) {
+  .for-pc {
+    display: none;
+  }
+}
+@media screen and (min-width: $mediaL-) {
+  body {
+    font-size: 1.8rem;
+  }
+  .for-sp {
+    display: none;
+  }
+}

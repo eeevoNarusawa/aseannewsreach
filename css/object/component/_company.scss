@@ -1,0 +1,50 @@
+// main: ../../default.scss
+@media screen and (max-width: $media-M) {
+  .c-company {
+    &--table {
+      width: 96%;
+      max-width: 700px;
+      margin: 40px auto;
+      table {
+        width: 100%;
+      }
+      tr:nth-child(2n-1) {
+        background: #f0f8f1;
+      }
+      th {
+        padding: 12px 0 12px 2%;
+        width: 25%;
+        max-width: 160px;
+      }
+      td {
+        padding: 12px 0;
+        line-height: 1.7;
+      }
+    }
+  }
+}
+@media screen and (min-width: $mediaL-) {
+  .c-company{
+    &--table {
+      width: 800px;
+      margin: 60px auto 120px;
+      table {
+        width: 770px;
+      }
+      tr {
+        width: 770px;
+      }
+      tr:nth-child(2n-1) {
+        background: #f0f8f1;
+      }
+      th {
+        padding: 12px 0 12px 30px;
+        width: 160px;
+      }
+      td {
+        padding: 12px 0;
+        line-height: 1.7;
+      }
+    }
+  }//.c-company
+}

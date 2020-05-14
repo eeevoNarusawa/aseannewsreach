@@ -1,0 +1,57 @@
+// main: ../default.scss
+@media screen and (max-width: $media-M) {
+  footer {
+    background: $green;
+    padding: 20px 0;
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #fff;
+    }
+    li {
+      margin: 8px 0;
+    }
+  }
+  .f {
+    &-logo {
+      width: 140px;
+    }
+    &-nav {
+      margin-top: 16px;
+      font-size: 1.6rem;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (min-width: $mediaL-) {
+  footer {
+    width: 100%;
+    background: $green;
+    padding: 80px 0 50px;
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #fff;
+    }
+    li {
+      margin: 8px 0;
+    }
+  }
+  .f {
+    &-logo {
+      width: 140px;
+    }
+    &-nav {
+      margin-top: 16px;
+      font-size: 1.6rem;
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

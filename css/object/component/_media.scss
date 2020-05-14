@@ -1,0 +1,385 @@
+// main: ../../default.scss
+@media screen and (max-width: $media-M) {
+  .c-media {
+    &--catch {
+      background-image: url('../images/media_visual.jpg');
+      background-size: cover;
+      background-position: 100% 0%;
+      padding: 40px 0;
+      margin-top: 12px;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 3.4rem;
+        color: $skyblue;
+      }
+      &-copy {
+        margin-top: 12px;
+      }
+    }//.c-media--catch
+    &--point {
+      width: 94%;
+      margin: 30px auto 0;
+      &__01,
+      &__02,
+      &__03 {
+        margin-bottom: 32px;
+        &-ttl {
+          font-size: 2.4rem;
+          margin-bottom: 12px;
+        }
+        &-img {
+          width: 80%;
+          max-width: 500px;
+          margin: 20px auto 0;
+        }
+      }
+      &__03 {
+        &-copy {
+          &__strong {
+            font-size: 2rem;
+            margin-bottom: 12px;
+          }
+        }
+        &-icons {
+          margin-top: 32px;
+        }
+          &-icon {
+            width: 200px;
+            margin: 0 auto 40px;
+            &__logo {
+              width: 200px;
+              height: 200px;
+              background: #fff9b6;
+              border-radius: 50%;
+              display: table;
+              div {
+                display: table-cell;
+                vertical-align: middle;
+              }
+            }
+            &__copy {
+              margin-top: 8px;
+              text-align: center;
+            }
+          }
+      }//.c-media--point__03
+    }//.c-media--point
+    &--stream {
+      background: #ffffeb;
+      padding: 40px 0;
+      &-wrap {
+
+      }
+        &-ttl {
+          font-family: $catchFont;
+          font-size: 3.4rem;
+          color: $skyblue;
+        }
+        &-copy {
+          margin-top: 12px;
+        }
+      &-icons {
+        @include flex();
+        width: 98%;
+        max-width: 500px;
+        margin: 20px auto 0;
+      }
+        &-icon {
+          width: 44%;
+          margin: 0 3% 20px;
+          &__ttl {
+            margin-top: 8px;
+            text-align: center;
+          }
+        }
+    }//.c-media--stream
+    &--cat {
+      margin: 40px 0;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 3.4rem;
+        color: $skyblue;
+        text-align: center;
+      }
+      &-copy {
+        text-align: center;
+        margin: 12px 0 20px;
+        font-size: 1.5rem;
+      }
+      &-wrap {
+        @include flex();
+      }
+        &-item {
+          width: 44%;
+          margin: 0 3% 20px;
+          &__ttl {
+            text-align: center;
+            margin-top: 4px;
+            font-weight: bold;
+          }
+        }
+    }//.c-media--cat
+    &--partner {
+      background: #fafafa;
+      padding: 40px 0;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 3.4rem;
+        color: $skyblue;
+        text-align: center;
+      }
+      &-copy {
+        text-align: center;
+        margin: 12px 0 20px;
+        font-size: 1.5rem;
+      }
+      &-wrap {
+        width: 94%;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        &__ttl {
+          width: 96%;
+          background: #fffff2;
+          padding: 8px 16px;
+        }
+          &__flag {
+            width: 50px;
+            float: left;
+          }
+          &__country {
+            float: left;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0fbfb0;
+            margin: 15px 0 0 30px;
+          }
+        &__conts,
+        &__conts02 {
+          background: #fff;
+          padding: 24px 0;
+        }
+          &__item {
+            width: 70%;
+            max-width: 300px;
+            margin: 0 auto 24px;
+          }
+            &__name {
+              text-align: center;
+              margin-top: 4px;
+            }
+      }
+    }//.c-media--partner
+  }//.c-media
+}
+@media screen and (min-width: $mediaL-) {
+  .c-media {
+    &--catch {
+      background-image: url('../images/media_visual.jpg');
+      background-size: cover;
+      background-position: 100% 0%;
+      padding: 60px 0;
+      margin-top: 40px;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 6.4rem;
+        color: $skyblue;
+      }
+      &-copy {
+        margin-top: 24px;
+      }
+    }
+    &--point {
+      width: $container;
+      margin: 60px auto 0;
+      &__01,
+      &__02 {
+        display: table;
+        &-wrap {
+          display: table-cell;
+          vertical-align: middle;
+          width: 580px;
+        }
+          &-ttl {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+          }
+          &-copy {
+
+          }
+        &-img {
+          width: 540px;
+          margin-left: 80px;
+        }
+      }//.c-media--point__01
+      &__02-img {
+        width: 540px;
+        margin-left: 0;
+        margin-right: 80px;
+      }
+      &__03 {
+        margin: 60px 0 40px;
+        &_wrap {
+
+        }
+          &-ttl {
+            font-size: 2.4rem;
+            margin-bottom: 6px;
+          }
+          &-copy {
+            &__strong {
+              font-size: 2.2rem;
+              margin-bottom: 12px;
+            }
+          }
+        &-icons {
+          @include flex();
+          margin-top: 40px;
+        }
+          &-icon {
+            width: 300px;
+            &__logo {
+              width: 300px;
+              height: 300px;
+              background: #fff9b6;
+              border-radius: 50%;
+              display: table;
+              div {
+                display: table-cell;
+                vertical-align: middle;
+              }
+            }
+            &__copy {
+              margin-top: 12px;
+              text-align: center;
+            }
+            &__center {
+              margin: 0 150px;
+            }
+          }
+      }
+    }//.c-media--point
+    &--stream {
+      background-image: url('../images/media_stream_bg.png');
+      background-size: cover;
+      background-position: 0% 0%;
+      padding: 80px 0;
+      margin-top: -180px;
+      &__display {
+        display: table;
+      }
+      &-wrap {
+        display: table-cell;
+        vertical-align: middle;
+        width: 400px;
+      }
+        &-ttl {
+          font-family: $catchFont;
+          font-size: 6.4rem;
+          color: $skyblue;
+        }
+        &-copy {
+          margin-top: 40px;
+        }
+      &-icons {
+        @include flex();
+        width: 760px;
+        margin-left: 40px;
+        padding: 280px 0 220px;
+      }
+        &-icon {
+          width: 150px;
+          margin: 80px 40px 0 0;
+          &__ttl {
+            margin-top: 12px;
+            text-align: center;
+          }
+        }
+    }// .c-media--stream
+    &--cat {
+      margin-top: 80px;
+      padding-bottom: 80px;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 6.4rem;
+        color: $skyblue;
+        text-align: center;
+      }
+      &-copy {
+        text-align: center;
+        margin: 20px 0 24px;
+      }
+      &-wrap {
+        @include flex();
+      }
+        &-item {
+          width: 240px;
+          margin: 0 30px 32px;
+          &__img {
+
+          }
+          &__ttl {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 8px;
+            font-weight: bold;
+          }
+        }
+    }//.c-media--cat
+    &--partner {
+      background: #fafafa;
+      padding: 60px 0;
+      &-ttl {
+        font-family: $catchFont;
+        font-size: 6.4rem;
+        color: $skyblue;
+        text-align: center;
+      }
+      &-copy {
+        text-align: center;
+        margin: 20px 0 24px;
+      }
+      &-wrap {
+        width: 900px;
+        margin: 32px auto;
+        &__ttl {
+          width: 840px;
+          background: #fffff2;
+          padding: 8px 30px;
+        }
+          &__flag {
+            width: 50px;
+            float: left;
+          }
+          &__country {
+            float: left;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0fbfb0;
+            margin: 15px 0 0 30px;
+          }
+        &__conts {
+          @include flex();
+          background: #fff;
+          width: 900px;
+        }
+          &__item {
+            width: 300px;
+            margin: 32px 0;
+          }
+            &__logo {
+
+            }
+            &__name {
+              text-align: center;
+              margin-top: 8px;
+            }
+        &__conts02 {
+          @include flex();
+          background: #fff;
+          width: 600px;
+          padding: 0 150px;
+        }
+      }//.c-media--partner-wrap
+    }//.c-media--partner
+  }//.c-media
+}

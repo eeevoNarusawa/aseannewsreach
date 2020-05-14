@@ -1,0 +1,23 @@
+// main: ../../default.scss
+// Font
+$iconFont: 'font Awesome 5 Free';
+@font-face {
+	font-family: 'catch_font';
+	src: url(../font/catch_font.ttf);
+}
+$catchFont: catch_font;
+
+// @media
+$media-S: 767px;
+$mediaM-: 768px;
+$media-M: 991px;
+$mediaL-: 992px;
+
+//container
+$container: 1200px;
+
+//color
+$green: #007b00;
+$skyblue: #0fbfb0;
+$orange: #ffcc00;
+$red: #ed1c24;

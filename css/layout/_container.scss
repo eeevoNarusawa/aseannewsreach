@@ -1,0 +1,12 @@
+// main: ../default.scss
+@media all and (max-width: $media-M) {
+  .l-container {
+    @include containerM();
+    max-width: 700px;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .l-container {
+    @include container();
+  }
+}
