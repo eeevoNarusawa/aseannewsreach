@@ -42,3 +42,13 @@ input[type="button"]::focus {
 input[type="checkbox"] {
   margin-right: 8px;
 }
+.wpcf7-not-valid-tip {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.wpcf7-response-output {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 0;
+  font-weight: bold;
+}

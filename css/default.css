@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @font-face {
   font-family: 'catch_font';
   src: url(../font/catch_font.ttf);
@@ -111,6 +109,18 @@ input[type="button"]::focus {
 
 input[type="checkbox"] {
   margin-right: 8px;
+}
+
+.wpcf7-not-valid-tip {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.wpcf7-response-output {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 0;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
