@@ -2,7 +2,7 @@
 <?php get_template_part('nav'); ?>
 　<section class="c-catch l-container">
     <div class="c-catch--subttl">域内最大規模の20,000以上の配信データベース</div>
-    <div class="c-catch--ttl">海外PR配信<br>業界最安値 39,800円～</div>
+    <div class="c-catch--ttl">海外PR配信<br>業界最安値 69,800円～</div>
     <div class="c-catch--copy">東南アジアの現地メディアに<br>プレスリリースを配信しませんか？</div>
     <div class="c-catch--text">域内6,000以上のメディア、<br class="for-sp">20,000人以上のメディア担当者のデータベースを<br class="for-sp">保有現地で読まれている影響力のある<br class="for-sp">メディアにリーチできます</div>
   </section><?php //.c-catch ?>
@@ -36,7 +36,7 @@
   <section class="c-price">
     <div class="l-container">
       <div id="price" class="c-price--ttl">料金プラン</div>
-      <div class="c-price--subttl">海外PR配信サービス業界最安値 39,800円～</div>
+      <div class="c-price--subttl">海外PR配信サービス業界最安値 69,800円～</div>
       <div class="c-price--wrap">
         <div class="c-price--visual for-pc"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/price.png"></div>
         <div class="c-price--table">
@@ -44,10 +44,10 @@
             <div class="c-price--table__ttl">配信料金</div>
             <div class="c-price--table__price">
               <ul>
-                <li>1ヶ国：39,800円</li>
-                <li>2ヶ国：69,800円</li>
-                <li>3ヶ国：89,800円</li>
-                <li>5ヶ国：98,000円</li>
+                <li>1ヶ国：69,800円</li>
+                <li>2ヶ国：99,800円</li>
+                <li>3ヶ国：129,800円</li>
+                <li>5ヶ国：159,800円</li>
                 <li class="c-price--table__price-tax">※税抜き</li>
               </ul>
             </div>
@@ -64,7 +64,7 @@
             <div class="c-price--table__ttl">オプション</div>
             <div class="c-price--table__price">
               <ul>
-                <li>翻訳：19,800円/1言語 <span>※税抜き</span></li>
+                <li>翻訳：30,000円/1言語 <span>※税抜き</span></li>
                 <li class="c-price--table__price-option">※上記、英語、中国語の金額の基本料金となり、内容、文字量によって異なります。</li>
               </ul>
             </div>

@@ -45,7 +45,7 @@
     </div>
     <div class="c-terms--wrap">
       <div class="c-terms--wrap__ttl">6. お問合わせ先</div>
-      <div class="c-terms--wrap__cont">eeevo malaysia Sdn.Bhd. (info@eeevo.asia)へお問い合わせください。</div>
+      <div class="c-terms--wrap__cont">株式会社カーツメディアワークス (privacy@karz.co.jp)へお問い合わせください。</div>
       <div class="c-terms--wrap__cont">
         <p>※お問合わせはE-mailのみでの受付となります。</p>
         <p>尚、お問合わせへの対応は当社営業時間内（9:00～17:30※土・日・祝日除く）</p>

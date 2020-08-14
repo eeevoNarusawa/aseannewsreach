@@ -30,7 +30,7 @@
     </div><!-- /.wrapper -->
 
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -45,16 +45,16 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/ja_JP/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script> -->
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat"
+    <!-- <div class="fb-customerchat"
       attribution=setup_tool
       page_id="105539554446191"
       theme_color="#7bf1db"
       logged_in_greeting="Facebookメッセンジャーからも簡単にご質問/お問い合わせいただけます。"
       logged_out_greeting="Facebookメッセンジャーからも簡単にご質問/お問い合わせいただけます。">
-    </div>
+    </div> -->
 
     <?php wp_footer(); ?>
   </body>

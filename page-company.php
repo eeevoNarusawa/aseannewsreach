@@ -8,19 +8,19 @@
   <section class="c-company--table">
     <table>
       <tr>
-        <th>会社名</th><td>eeevo malaysia Sdn.Bhd.</td>
+        <th>会社名</th><td>株式会社カーツメディアワークス</td>
       </tr>
       <tr>
-        <th>代表者名</th><td>Noritaka Araki</td>
+        <th>代表者名</th><td>村上　崇</td>
       </tr>
       <tr>
-        <th>設立</th><td>2012年</td>
+        <th>設立</th><td>2002年</td>
       </tr>
       <tr>
-        <th>所在地</th><td>Unit B-9-2, Level 9, Block B, Northpoint Offices, Mid Valley City,<br>No. 1 Medan Syed Putra Utara, 59200 Kuala Lumpur, Malaysia.</td>
+        <th>所在地</th><td>〒150-0002　東京都渋谷区渋谷1-15-8 宮益ONビル4F</td>
       </tr>
       <tr>
-        <th>Website</th><td>https://www.eeevo.asia</td>
+        <th>Website</th><td>https://www.kartz.co.jp/</td>
       </tr>
     </table>
   </section>
