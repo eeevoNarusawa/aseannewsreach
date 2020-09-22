@@ -1,7 +1,257 @@
-// main: ../default.scss
-@media screen and (max-width: $media-S) {
+.l-sidebar {
+    background: #fff;
+
+    &--ranking {
+        margin-bottom: 40px;
+
+        &__ttl {
+            font-family: $catchFont;
+            color: #fff;
+            background: $red;
+            font-size: 3.2rem;
+            padding: 14px 0;
+            text-align: center;
+            position: relative;
+
+            &:before {
+                content:"";
+                display:block;
+                position: absolute;
+                top: -16px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background: $red;
+            }
+        }
+
+        &__list {
+            border: 1px solid $red;
+            box-sizing: border-box;
+
+            &-item {
+                color: $red;
+                border-top: 1px solid $red;
+
+                &-img {
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                &-ttl {
+                }
+            }
+        }
+    }
+
+    &--cat {
+        margin-bottom: 40px;
+
+        &__ttl {
+            font-family: $catchFont;
+            color: #fff;
+            background: $orange;
+            font-size: 3.2rem;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+
+            &:before {
+                content:"";
+                display:block;
+                position: absolute;
+                top: -16px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background: $orange;
+            }
+        }
+
+        &__list {
+            border: 1px solid $orange;
+            box-sizing: border-box;
+
+            &-item {
+                display: block;
+                text-align: center;
+                padding: 14px 0;
+                background: #fcf3b0;
+                border-top: 1px solid $orange;
+            }
+        }
+    }
+
+    &--country {
+        &__ttl {
+            font-family: $catchFont;
+            background: $skyblue;
+            color: #fff;
+            font-size: 3.2rem;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+
+            &:before {
+                content:"";
+                display:block;
+                position: absolute;
+                top: -16px;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background: $skyblue;
+            }
+        }
+
+        &__list {
+            border: 1px solid $skyblue;
+            box-sizing: border-box;
+
+            &-item {
+                display: block;
+                text-align: center;
+                padding: 14px 0;
+                background: #b9ebee;
+                border-top: 1px solid $skyblue;
+            }
+        }
+    }
 }
-@media screen and (min-width: $mediaM-) {
+
+@media screen and (max-width: $media-M) {
+    .l-sidebar {
+        &--ranking {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                    padding: 20px 20px 10px;
+
+                    &-img {
+                        width: 100%;
+                        height: 180px;
+
+                        img {
+                            height: 180px;
+                        }
+                    }
+
+                    &-ttl {
+                        font-family: $catchFont;
+                        font-size: 2rem;
+                        line-height: 1.2;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        &--cat {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                }
+            }
+        }
+
+        &--country {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                }
+            }
+        }
+    }
 }
+
 @media screen and (min-width: $mediaL-) {
+    .l-sidebar {
+        float: right;
+        width: 260px;
+        padding: 32px 20px 20px;
+
+        &--ranking {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                    padding: 10px;
+                    transition: .2s;
+                    display: table;
+                    table-layout: fixed;
+                    width: calc(100% - 20px);
+
+                    &:hover {
+                        background: #ffe5d8;
+                    }
+
+                    &-img {
+                        width: 80px;
+                        height: 80px;
+                        @include tableCell();
+
+                        img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+    
+                    &-ttl {
+                        width: 153px;
+                        overflow: auto;
+                        padding-left: 5px;
+                        @include tableCell();
+                    }
+                }
+            }
+        }
+
+        &--cat {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                    transition: .2s;
+
+                    &:hover {
+                        background: #fff;
+                        color: $orange;
+                    }
+
+                    &:nth-child(1) {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+
+        &--country {
+            &__ttl {
+            }
+
+            &__list {
+                &-item {
+                    transition: .2s;
+
+                    &:hover {
+                        background: #fff;
+                        color: $skyblue;
+                    }
+
+                    &:nth-child(1) {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,8 +1,8 @@
-// main: ../../default.scss
+
 @media screen and (max-width: $media-M) {
   .c {
     &-catch {
-      background-image: url('../images/sp_main_visual.png');
+      background-image: url('../../images/sp_main_visual.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 100% 100%;
@@ -44,7 +44,7 @@
         width: 350px;
         padding-top: 90px;
         height: 260px;
-        background-image: url('../images/chara_bg.png');
+        background-image: url('../../images/chara_bg.png');
         background-size: cover;
         position: relative;
         margin: 40px auto 20px;
@@ -139,7 +139,7 @@
           line-height: 1.2;
         }
         &-text {
-          background-image: url('../images/sp_country_bg.png');
+          background-image: url('../../images/sp_country_bg.png');
           background-size: cover;
           background-position: 50% 50%;
           background-repeat: no-repeat;
@@ -165,7 +165,7 @@
 @media screen and (min-width: $mediaL-) {
   .c {
     &-catch {
-      background-image: url('../images/main_visual.png');
+      background-image: url('../../images/main_visual.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 100% 100%;
@@ -213,7 +213,7 @@
         width: 350px;
         padding-top: 90px;
         height: 260px;
-        background-image: url('../images/chara_bg.png');
+        background-image: url('../../images/chara_bg.png');
         background-size: cover;
         position: relative;
         &__center {
@@ -250,7 +250,7 @@
       }
     }//-chara
     &-price {
-      background-image: url('../images/price_bg.png');
+      background-image: url('../../images/price_bg.png');
       background-size: cover;
       padding: 290px 0 350px;
       &--ttl {

@@ -1,0 +1,45 @@
+.c-sns {
+    a {
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 1.4rem;
+
+        &:hover {
+            opacity: .8;
+        }    
+    }
+
+    &-list {
+        &__fb {
+            background: $fb;
+            margin-right: 10px;
+        }
+
+        &__tweet {
+            background: $twitter;
+        }
+    }
+}
+
+@media screen and (max-width: $media-M) {   
+}
+
+@media screen and (min-width: $mediaL-) {
+    .c-sns {
+        a {
+            &:hover {
+                opacity: .8;
+            }    
+        }
+
+        &-list {
+            &__fb {
+            }
+
+            &__tweet {
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 @media screen and (max-width: $media-M) {
   .c-media {
     &--catch {
-      background-image: url('../images/media_visual.jpg');
+      background-image: url('../../images/media_visual.jpg');
       background-size: cover;
       background-position: 100% 0%;
       padding: 40px 0;
@@ -174,7 +174,7 @@
 @media screen and (min-width: $mediaL-) {
   .c-media {
     &--catch {
-      background-image: url('../images/media_visual.jpg');
+      background-image: url('../../images/media_visual.jpg');
       background-size: cover;
       background-position: 100% 0%;
       padding: 60px 0;
@@ -259,7 +259,7 @@
       }
     }//.c-media--point
     &--stream {
-      background-image: url('../images/media_stream_bg.png');
+      background-image: url('../../images/media_stream_bg.png');
       background-size: cover;
       background-position: 0% 0%;
       padding: 80px 0;

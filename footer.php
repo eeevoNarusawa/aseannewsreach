@@ -23,6 +23,7 @@
           <li><a href="/#chara">特徴</a></li>
           <li><a href="/#price">料金</a></li>
           <li><a href="/media/">配信先</a></li>
+          <li><a href="/column/">コラム</a></li>
           <li><a href="/#contact">お問い合わせ</a></li>
         </ul>
       </nav>

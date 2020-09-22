@@ -96,3 +96,68 @@
   } //END my_meta_ogp
 
   add_action('wp_head','my_meta_ogp');//headにOGPを出力
+
+
+  // 人気記事出力用
+function getPostViews($postID){
+  	$count_key = 'post_views_count';
+	  $count = get_post_meta($postID, $count_key, true);
+	  if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+  	}
+	  return $count.' Views';
+}
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+
+    //ページネーション
+    function pagination($pages = '', $range = 1)
+    {
+         $showitems = ($range * 2)+1;  
+     
+         global $paged;
+         if(empty($paged)) $paged = 1;
+     
+         if($pages == '')
+         {
+             global $wp_query;
+             $pages = $wp_query->max_num_pages;
+             if(!$pages)
+             {
+                 $pages = 1;
+             }
+         }   
+     
+         if(1 != $pages)
+         {
+             echo "<div class=\"pagination\"><div class=\"pagination-box\"><span class=\"page-of\">PAGE ".$paged." / ".$pages."</span>";
+             if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+             if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+     
+             for ($i=1; $i <= $pages; $i++)
+             {
+                 if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+                 {
+                     echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+                 }
+             }
+     
+             if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">&rsaquo;</a>";
+             if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+             echo "</div></div>\n";
+         }
+    }

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php get_template_part('nav'); ?>
-　<section class="c-catch l-container">
+  <section class="c-catch l-container">
     <div class="c-catch--subttl">域内最大規模の20,000以上の配信データベース</div>
     <div class="c-catch--ttl">海外PR配信<br>業界最安値 69,800円～</div>
     <div class="c-catch--copy">東南アジアの現地メディアに<br>プレスリリースを配信しませんか？</div>
